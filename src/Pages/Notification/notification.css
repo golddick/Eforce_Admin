@@ -1,0 +1,38 @@
+.NotificationPage{
+    display: grid;
+    grid-template-columns: 1.8fr 5fr;
+    gap: 20px;
+    background: var(--color-bg);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+    /* position: relative; */
+}
+
+.leftNav{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+    /* background: red; */
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.bodyBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* position: absolute;
+    right: 0; */
+}
+.boxB{
+    background: var(  --color-bg-variant);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}

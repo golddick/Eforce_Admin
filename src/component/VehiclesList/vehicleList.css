@@ -1,0 +1,244 @@
+.VehiclesList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: #F5F5F5;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.VLTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+}
+
+.OfficeStation{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.OSText{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.SText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.stationLocation{
+    display: inline-flex;
+    padding: 6px 22px 5px 14px;
+    align-items: center;
+    gap: 73px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.NOCar{
+    display: grid;
+    /* display: flex; */
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.1fr 0.7fr;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+
+.carIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    background: #047DD6;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.noCarText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    /* background-color: crimson; */
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+    /* background-color: #EAE10B; */
+    
+}
+
+.carCard{
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    background: #FFF;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.carImg{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.carInf0_{
+    display: flex;
+    flex-direction: column;
+    /* background-color: bisque; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.CnameInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._carName{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+._carVDate{
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+._carDe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: blue; */
+    box-sizing: border-box;
+}
+
+.DeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 5px;
+    /* background-color: #EC1919; */
+}
+
+.cStatus{
+    color: #EAE10B;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.DeRight{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._viewBtn{
+    border-radius: 10px;
+    background: #80BAEF;
+    border: none;
+    display: inline-flex;
+    padding: 4px 31px 4px 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigationSwiper{
+    /* background-color: #EC1919; */
+    /* width: 20%; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.prev-nav,.next-nav{
+    height: 100% ;
+    width: 40px;
+}
+.pag_numbers{
+    /* color: #EAE10B; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,224 @@
+.TransactionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    background: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.topTransInfo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+   box-sizing: border-box;
+    background: transparent;
+    /* align-items: center; */
+}
+
+.trans_Details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    /* padding: 10px 20px 10px 20px; */
+}
+
+.topTD{
+display: flex;
+align-items: center;
+/* gap: 200px; */
+padding: 20px 80px 20px 30px;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+}
+
+.tdBanner{
+    width: 100%;
+    display: inline-flex;
+    padding: 20px 80px 20px 30px;
+    align-items: center;
+    flex-shrink: 0;
+    background: #80BAEF;
+}
+
+.tdOffice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.tdInfo{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    padding: 20px 80px 20px 30px;
+    width: 100%;
+}
+
+.tdSuccess{
+    color: #349008;
+    border-radius: 20px;
+    background: rgba(77, 184, 26, 0.41);
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tdInfoText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.recentTransaction{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.rtTop{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    gap:20px;
+}
+
+.topLeft, .topRight{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: blueviolet; */
+}
+
+.rtText{
+    color: #047DD6;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rtList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: burlywood; */
+    padding: 25px;
+    height: '100%';
+}
+
+.recentT{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.rTleft,.rTright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.rtName{
+    color: #047DD6;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rtv{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rtAmount{
+    color: #4DB81A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.127px;
+}
+
+.rtDate{
+    color: #AAA9A9;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottomTransInfo{
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tiTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leffttiTop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.TI{
+    background-color: #FFF !important;
+}
+

@@ -1,0 +1,108 @@
+.Activity{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.actHeader{
+    color: #000;
+    font-family: Montserrat;
+    font-size: var(--h1-font-size);
+    font-style: normal;
+    font-weight: var(  --h1-font-wight);
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.widgetroll{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.widgetCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardTop{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+   padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.cardIcon{
+    width: 40px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: #ECE311;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -100%;
+} 
+
+.cardText{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.NOF{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Number{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.086px;
+}
+
+.statInfo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat{
+    color: #349008;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.statText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

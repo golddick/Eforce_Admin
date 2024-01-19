@@ -1,0 +1,68 @@
+:root {
+  font-family:Montserrat;
+
+  color-scheme: light dark;
+  color: #000;
+  background: #fff;
+  /* height: 100vh; */
+  /* padding: 10px; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --color-bg: #fff;
+  --color-bg-variant:#F5F5F5;
+  --color-btn: #047DD6;
+  --color-sm-text: #AAA9A9;
+  --color-text: #000;
+
+
+  --transition: all 400ms ease; 
+
+  --container-width-lg: 100%;
+
+  --container-width-sm:75%;
+
+  --h1-font-size:25px;
+  --h1-font-wight:500;
+  --text-font-size:15px;
+}
+
+.active{
+  border: 2px solid #047DD6;
+  background: #80BAEF;
+  border-radius: 12px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+
+body {
+width: 100%;
+height: 100vh;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+.App{
+  max-width: 1500px;
+  margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin:0;
+  padding:0;
+}
+
+.boldText{
+  font-size: 15px !important;
+}
+
+

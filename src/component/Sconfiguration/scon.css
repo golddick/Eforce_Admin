@@ -1,0 +1,411 @@
+.Configuration{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #F5F5F5;
+}
+
+.cHeader{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.headerText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.headerSub{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.scTop{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    width: 100%;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.uManagement, .pConfiguration{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    border-radius: 15px;
+    background: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pConfiguration{
+    height: 300px;
+   
+}
+
+.topCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cardText{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #047DD6;
+}
+
+.userList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+._user{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    /* background: red; */
+}
+
+.user_{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userName_{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.UserRole{
+    color: rgba(0, 0, 0, 0.56);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.addAccount{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.addText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.selectSpeed{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #80BAEF;
+}
+
+.speedText{
+    color: #047DD6;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pConfig_{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    /* padding: 10px; */
+   box-sizing: border-box;
+   /* background-color: burlywood; */
+}
+
+.Config_{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+    box-sizing: border-box;
+}
+
+.speenKM{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.speedName{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.kmText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.addSpeed{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    /* background-color: brown; */
+}
+
+.symbol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 16px;
+    border: 0.8px solid #047DD6;
+    background: #FFF;
+    overflow: hidden;
+    display: inline-flex;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.minus,.add_{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+
+.add_{
+    width: 100%;
+    background-color: #047DD6;
+}
+
+.scBottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #FFF;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.accessUsers{
+    width: 100%;
+    display: flex;
+    /* background-color: bisque; */
+}
+
+.accessTable{
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid #D9D9D9 !important; */
+}
+
+.HeadText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.accessBody{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #D9D9D9 !important; 
+}
+.accessName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.accessMail{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.loggedInStatus{
+    color: #4DB81A;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.notLoggedInStatus{
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.userRole{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.super_AdminRole{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #595443;
+}
+
+.ManagerRole{
+    display: inline-flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #F8C510;
+    color: #000;
+
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AuditorRole{
+    display: inline-flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #4DB81A;
+    color: #000;
+
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accessAction{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #4DB81A; */
+}
+
+.leftAction , .rightAction{
+display: grid;
+grid-template-columns: 0.2fr 1fr ;
+align-items: center;
+gap: 10px;
+width: 100%;
+}
+
+.actionText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+ 
+  

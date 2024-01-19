@@ -1,0 +1,85 @@
+.NotificationBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.notificationHeader{
+    color: #000;
+    font-family: Montserrat;
+    font-size: var(  --h1-font-size);
+    font-style: normal;
+    font-weight: var(  --h1-font-wight);
+    line-height: normal;
+}
+
+.Notification_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.notification_{
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+    align-items: center;
+    gap: 20px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.userImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 100%;
+}
+
+.NotificationDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  
+}
+
+.user-Name{
+    color: #000;
+    font-family: Montserrat;
+    font-size:15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.notification-Detail{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tym{
+    color: #AAA9A9;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

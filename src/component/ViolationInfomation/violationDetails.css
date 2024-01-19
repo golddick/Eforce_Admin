@@ -1,0 +1,318 @@
+.ViolationDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 0;
+    margin: 0;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.vDetails{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    /* background-color: yellow; */
+    box-sizing: border-box;
+}
+
+.VDBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.vdBoxTop{
+    width: 100%;
+    /* height: 50px; */
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #B8DFF2;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.4fr 3fr 2fr;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.vdBoxCenter{
+    display: flex;
+    padding: 10px;
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.vdBoxBottom{
+    width: 100%;
+    align-self: flex-end;
+    text-align: end;
+    padding: 15px;
+}
+
+.officerBox{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.obProfile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.obImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.pDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:5px;
+}
+
+.pName{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.offender{
+    display: flex;
+    /* width: 100%; */
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(236, 25, 25, 0.20);
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.License{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.lNo{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 5px;
+}
+
+.v-details{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+    gap: 30px;
+}
+
+.vTable{
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+}
+
+.violation-Table{
+    /* background-color: #EC1919; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.violation-Table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.vthead{
+    /* background-color: aquamarine; */
+    text-align: start;
+    border-bottom: 2px solid black;
+}
+
+
+
+.violationTH{
+    text-align: start;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.violationTHIcon{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+  } */
+
+.violationTD {
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  } 
+
+  .violationTH,.violationTHIcon {
+    border-bottom: 2px solid black;
+  }
+
+  .Not-paid {
+    color: red;
+  }
+  
+  .Paid {
+    color: #047DD6;
+  }
+
+  .vDate{
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    overflow: hidden;
+  }
+
+  .vDateTop{
+    width: 100%;
+   padding: 15px;
+    background: #B8DFF2;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+  }
+
+  .WarningText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .DateText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .vDateBottom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    /* padding: 15px; */
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .vWaring{
+width: 100%;
+height: 100%;
+background: #F5F5F5;
+box-shadow: -2px 4px 4px 6px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+gap: 10px;
+/* padding: 37.123px 27px 190.5px 27px; */
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+  }
+
+  .VWText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .vDueDate{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+justify-content: center;
+  }
+
+  .VDDText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

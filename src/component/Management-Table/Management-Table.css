@@ -1,0 +1,116 @@
+.Drivers_Table{
+    background: var(--color-bg);
+    width: 100%;
+    /* margin-top: -10px; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+   
+}
+
+.DriversTable{
+    border-spacing: 0 15px; 
+    background: #F5F5F5 !important;
+    padding: 15px;
+}
+
+.TableHead {
+    border-collapse: collapse;
+    border: 1px solid #D9D9D9 !important;
+}
+
+.TableHead th {
+    /* border: 1px solid #D9D9D9 !important; */
+    background: var(--color-bg);
+    border-collapse: collapse;
+}
+.HeadText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.tableContent{
+    background: #F5F5F5 !important;
+    overflow: hidden;
+    /* border-radius:20px; */
+    width: 100%;
+}
+
+.TableBody{
+   /* padding-top: 20px; */
+    width: 100%;
+    border-radius:20px;
+    /* display: flex;
+    align-items: center; */
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-spacing: 0 10px;
+}
+
+.BodyText{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    
+    
+}
+
+.BodyText-Img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.viewBtn{
+    display: inline-flex;
+    padding: 5px ;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #047DD6;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+td, th {
+
+    padding: 8px; 
+  }
+  
+  td:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  td:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  /* table {
+    border-collapse: separate;
+    
+    border-spacing: 0 50px ; 
+  } */

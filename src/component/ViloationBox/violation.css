@@ -1,0 +1,66 @@
+.violationWrapper{
+    display: flex;
+    background: #F5F5F5;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+}
+
+.ViolationBox{
+width: 100%;
+display: grid;
+grid-template-columns: 0.5fr 5fr 0.5fr;
+align-items: center;
+gap: 20px;
+border-radius: 30px;
+background: #FFF;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 10px;
+box-sizing: border-box;
+}
+
+.Left{
+    width: 100%;
+    display: flex;
+    align-self: center;
+}
+
+.violatorImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.Center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: antiquewhite; */
+}
+
+.violatorName{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.violatorViolation{
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
