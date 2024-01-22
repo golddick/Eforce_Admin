@@ -1,4 +1,4 @@
-.BodyHeader{
+.Body_Header{
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -34,18 +34,18 @@ gap: 10px;
     line-height: normal;
 }
 
-.headerRight{
+.header_Right{
 width: 100%;
 display: grid;
 grid-template-columns: 0.2fr 1fr 1fr;
-align-items: center;
+align-items: center !important;
 display: flex;
 justify-content: flex-end;
 gap: 20px;
 /* background-color: aquamarine; */
 }
 
-.notificationIcon{
+.notification_Icon{
     height: 20px;
     width: 20px;
 }

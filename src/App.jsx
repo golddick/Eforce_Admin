@@ -16,6 +16,8 @@ import TransactionInfo from './Pages/systemManagement/ViolationInfo/TransactionI
 import SystemConfiguration from './Pages/systemConfiguration/SystemConfiguration'
 import VehicleLot from './Pages/Vehicle-Lot/VehicleLot'
 import VDetails from './Pages/Vehicle-Lot/VDetail/VDetails'
+import Login from './Pages/Auth/Login'
+import ForgetPassword from './Pages/Auth/ForgetPass'
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
     <Router>
     <> 
     <Routes>
+    <Route path="/" element={<Login />} />
+    <Route path="/Forget-Password" element={<ForgetPassword />} />
     <Route path="/management" element={<System />} />
     <Route path="/Officer-Profile" element={<OfficerProfile/>} />
     <Route path="/Register-Officer" element={<RegisterOfficer/>} />

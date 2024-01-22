@@ -174,8 +174,12 @@ box-sizing: border-box;
 }
 
 .vBodyText{
+    /* background: #FFF; */
+}
+
+.vBodyText{
     color: #000;
-    max-width: 100px;
+    /* width: 100px; */
     font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
@@ -185,16 +189,57 @@ box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+    
 
-
-td{
     border-radius: 1px !important;
     border: 1px solid #D9D9D9;
     border-spacing: 0 20px; 
-    padding: 15px;
-    /* border: 1px solid #D9D9D9 */
+    padding: 10px;
 }
+
+.TextContainer{
+    display: flex;
+    /* background-color: #80BAEF; */
+    flex-direction: column;
+    /* width: 100%; */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.textList{
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid #047DD6;
+    color: #047DD6;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.expiredStatus{
+    color: #a3a2a2;
+font-family: Montserrat;
+font-size: 10px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+letter-spacing: -0.157px;
+}
+
+.colVol{
+    /* background-color: #EC1919; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
   
   th:first-child {
     border-top-left-radius: 20px;
@@ -208,8 +253,8 @@ td{
 
   .vehicleOwner{
     display: grid;
-    /* flex-direction: column; */
-    grid-template-columns: 0.1fr 8fr;
+    flex-direction: column;
+    /* grid-template-columns: 0.1fr 8fr; */
      /* align-items: center; */
      width: 100%;
      gap: 20px;
@@ -219,20 +264,39 @@ td{
 
   .ownerInfo{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
     gap: 20px;
     /* display: none; */
   }
 
+  .UnpaidStyle{
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .ClearedStyle{
+    color: #047DD6;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   .ownerCarInfo{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
     border-radius: 30px;
     background: #FFF;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
