@@ -18,6 +18,8 @@ import VehicleLot from './Pages/Vehicle-Lot/VehicleLot'
 import VDetails from './Pages/Vehicle-Lot/VDetail/VDetails'
 import Login from './Pages/Auth/Login'
 import ForgetPassword from './Pages/Auth/ForgetPass'
+import OfficerReport from './Pages/Analytics/OfficerReport'
+import FinancialReport from './Pages/Analytics/FinancialReport'
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
     <Route path="/Configuration" element={<SystemConfiguration/>} />
     <Route path="/vehicle" element={<VehicleLot/>} />
     <Route path="/vehicle-Details" element={<VDetails/>} />
+    <Route path="/Officer-Report" element={<OfficerReport/>} />
+    <Route path="/Financial-Report" element={<FinancialReport/>} />
     </Routes>
     </>
     </Router>

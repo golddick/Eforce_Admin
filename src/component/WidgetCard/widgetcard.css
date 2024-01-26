@@ -1,0 +1,63 @@
+.WidgetCard_ {
+    padding: 10px 20px 10px 20px;
+    /* background-color: aqua !important; */
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   justify-content: space-between;
+    box-sizing: border-box;
+    height: 90px;
+    max-height: 100%;
+
+}
+
+.topText{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wicon{
+    width: 20px;
+    height: 20px;
+}
+
+.widgetHeader{
+    color: #AAA9A9;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bottomText{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   width: 100%;
+}
+
+.widgetPrice{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* letter-spacing: -0.15px; */
+}
+
+.percentText{
+    color: #2FEB86;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

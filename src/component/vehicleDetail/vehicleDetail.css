@@ -145,6 +145,7 @@ box-sizing: border-box;
     overflow: auto;
     border-spacing: 0 10px; 
     border-collapse: collapse;
+    box-sizing: border-box;
     /* background-color: yellow; */
     /* display: none; */
 }
