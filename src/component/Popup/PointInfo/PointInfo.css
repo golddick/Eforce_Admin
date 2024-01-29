@@ -1,0 +1,105 @@
+.PointInfoContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.199);
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.containerBox{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box !important;
+    /* overflow: auto; */
+}
+
+.closeCont{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pointTable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+}
+
+.pointTable_{
+    width: 100%;
+    border-spacing: 0 5px; 
+    background: transparent !important;
+    /* padding: 15px; */
+}
+
+.PTHead{
+    border-collapse: collapse;
+    border: 1px solid #D9D9D9 !important;
+    background: #B8DFF2;
+    height: 100%;
+    /* border-spacing: 0 15px;  */
+}
+
+.BodyText{
+    border-bottom: 1px solid #D9D9D9;
+    border-radius: 1px !important;
+    background: #F5F5F5 !important;
+}
+
+.point-Filter{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between !important;
+    /* background-color: chartreuse; */
+    /* flex-wrap: wrap; */
+}
+
+.fText_{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.pointDateFilter{
+    width: 110px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+.givenPoint{
+    color: #EC1919;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 18.679px;
+    background: rgba(252, 12, 12, 0.28);
+    display: inline-flex;
+    padding: 4px 8px 4px 8px;
+    align-items: center;
+    white-space: nowrap;
+}

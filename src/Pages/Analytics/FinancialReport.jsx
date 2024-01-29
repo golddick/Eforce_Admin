@@ -3,6 +3,7 @@ import ENav from '../../component/EforceNav/ENav'
 import BodyHeader from '../../component/BodyHeader/BodyHeader'
 import TableNav from '../../component/TableNav/TableNav'
 import AnalyticNav from '../../component/HomeNav/AnalyticNav'
+import FinancialBox from '../../component/FinancialBox/FinancialBox'
 import './Analytic.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -22,8 +23,7 @@ function FinancialReport() {
         </div>
       <div className="bodyBox">
         <BodyHeader/>
-        <TableNav/>
-        Financial report 
+        <FinancialBox/>
       </div>
     </div>
   )

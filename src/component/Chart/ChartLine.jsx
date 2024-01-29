@@ -27,7 +27,7 @@ ChartJS.register(
 
 
 
-const LineChart = ( {labels, datasets}) => {
+const LineChart = ( {chartData}) => {
 
   const options = {
     responsive: true,
@@ -67,15 +67,18 @@ const LineChart = ( {labels, datasets}) => {
     },
   };
 
-  const data = {
-    labels,
-    datasets
-  };
+  // const data = {
+  //   labels,
+  //   chartData
+  // };
 
   
 
   return (
-      <Line options={options} data={data} />
+    <div className="Chart">
+ <Line  data={chartData} options={options} />
+    </div>
+     
   );
 };
 

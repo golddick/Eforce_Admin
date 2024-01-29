@@ -23,7 +23,7 @@ ChartJS.register(
 );
 
 
-const CircleChart = ({labels, datasets} ) => {
+const CircleChart = ({ chartData } ) => {
 
     const data = {
         labels: [
@@ -63,6 +63,7 @@ const CircleChart = ({labels, datasets} ) => {
 
   return (
      <div style={{width:'200px'}}>
+      {/* <Doughnut  data={chartData} options={options} /> */}
       <Doughnut  data={data} options={options} />
      </div>
   );

@@ -6,46 +6,86 @@ import './analyticBox.css'
 
 function AnalyticBox() {
 
-    const labels = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July','Aug', 'Sept', "Oct", "Nov", "Dec"];
+//     const labels = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July','Aug', 'Sept', "Oct", "Nov", "Dec"];
 
 
 
- // Initialize datasets with empty arrays
- const datasets = [];
+//  // Initialize datasets with empty arrays
+//  const datasets = [];
 
- datasets.push(
-   {
-     label: 'Fined Vehicles',
-     data: [500, 100, 100, 300, 250, 100, 0, 3],
-     borderColor: 'rgb(255, 99, 132)',
-     backgroundColor: 'rgb(255, 99, 132)',
-     yAxisID: 'y',
-   },
-   {
-     label: 'Fined Drivers',
-     data: [200, 90, 103, 200, 120, 300, 100, 201, 6],
-     borderColor: 'rgb(54, 162, 235)',
-     backgroundColor: 'rgb(54, 162, 235)',
-     yAxisID: 'y1',
-   },
-   {
-     label: 'Fined Vehicles & Drivers',
-     data: [210, 200, 203, 101, 120, 90, 130, 210],
-     borderColor: 'rgb(255, 205, 86)',
-     backgroundColor: 'rgb(255, 205, 86)',
-     yAxisID: 'y2',
-   }
- );
+//  datasets.push(
+//    {
+//      label: 'Fined Vehicles',
+//      data: [500, 100, 100, 300, 250, 100, 0, 3],
+//      borderColor: 'rgb(255, 99, 132)',
+//      backgroundColor: 'rgb(255, 99, 132)',
+//      yAxisID: 'y',
+//    },
+//    {
+//      label: 'Fined Drivers',
+//      data: [200, 90, 103, 200, 120, 300, 100, 201, 6],
+//      borderColor: 'rgb(54, 162, 235)',
+//      backgroundColor: 'rgb(54, 162, 235)',
+//      yAxisID: 'y1',
+//    },
+//    {
+//      label: 'Fined Vehicles & Drivers',
+//      data: [210, 200, 203, 101, 120, 90, 130, 210],
+//      borderColor: 'rgb(255, 205, 86)',
+//      backgroundColor: 'rgb(255, 205, 86)',
+//      yAxisID: 'y2',
+//    }
+//  );
+
+//  // Calculate totals separately for Fined Vehicles and Fined Drivers
+//  const totalFinedVehicles = datasets[0].data.reduce((sum, value) => sum + value, 0);
+//  const totalFinedDrivers = datasets[1].data.reduce((sum, value) => sum + value, 0);
+//  const totalVehicleAndDriver = datasets[2].data.reduce((sum, value)=> sum + value,0)
+
+//  // Update the labels with the calculated totals
+//  datasets[0].label = `  N${totalFinedVehicles.toLocaleString()}`;
+//  datasets[1].label = `  N${totalFinedDrivers.toLocaleString()}`;
+//  datasets[2].label = `  N${totalVehicleAndDriver.toLocaleString()}`;
+
+const datasets = [];
+
+const chartData = {
+  labels: ['January ', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'september', 'October', 'November', 'December'],
+ 
+  datasets: [
+    {
+      label: 'Fined Vehicles',
+      data: [500, 100, 100, 300, 250, 100, 0, 3],
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgb(255, 99, 132)',
+      yAxisID: 'y',
+    },
+    {
+      label: 'Fined Drivers',
+      data: [200, 90, 103, 200, 120, 300, 100, 201, 6],
+      borderColor: 'rgb(54, 162, 235)',
+      backgroundColor: 'rgb(54, 162, 235)',
+      yAxisID: 'y1',
+    },
+    {
+      label: 'Fined Vehicles & Drivers',
+      data: [210, 200, 203, 101, 120, 90, 130, 210],
+      borderColor: 'rgb(255, 205, 86)',
+      backgroundColor: 'rgb(255, 205, 86)',
+      yAxisID: 'y2',
+    }
+  ]
+};
 
  // Calculate totals separately for Fined Vehicles and Fined Drivers
- const totalFinedVehicles = datasets[0].data.reduce((sum, value) => sum + value, 0);
- const totalFinedDrivers = datasets[1].data.reduce((sum, value) => sum + value, 0);
- const totalVehicleAndDriver = datasets[2].data.reduce((sum, value)=> sum + value,0)
+ const totalFinedVehicles = chartData.datasets[0].data.reduce((sum, value) => sum + value, 0);
+ const totalFinedDrivers = chartData.datasets[1].data.reduce((sum, value) => sum + value, 0);
+ const totalVehicleAndDriver = chartData.datasets[2].data.reduce((sum, value)=> sum + value,0)
 
  // Update the labels with the calculated totals
- datasets[0].label = `  N${totalFinedVehicles.toLocaleString()}`;
- datasets[1].label = `  N${totalFinedDrivers.toLocaleString()}`;
- datasets[2].label = `  N${totalVehicleAndDriver.toLocaleString()}`;
+ chartData.datasets[0].label = `  N${totalFinedVehicles.toLocaleString()}`;
+ chartData.datasets[1].label = `  N${totalFinedDrivers.toLocaleString()}`;
+ chartData.datasets[2].label = `  N${totalVehicleAndDriver.toLocaleString()}`;
 
 
  const TableBody = [
@@ -139,7 +179,7 @@ const renderStatus = (status) => {
                     <WidgetCard title={"Organization Revenue"} value={'15,000'}  percent={"+2"}/>
                 </div>
                 <div className="bottomWidget">
-                <LineChart  labels={labels} datasets={datasets}  />
+                <LineChart   chartData={chartData}  />
                 </div>
             </div>
             <div className="rightWidget">
@@ -150,7 +190,7 @@ const renderStatus = (status) => {
             <h3 className='BoxName'>Alfred Amos</h3>
             <div className="contactIcon "><span className='BoxName'>ID: 7422368</span></div>
             </div>
-            <CircleChart  labels={labels} datasets={datasets} />
+            <CircleChart   />
             </div>
         </div>
         <div className="analyticTable">

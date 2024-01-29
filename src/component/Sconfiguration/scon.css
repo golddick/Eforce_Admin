@@ -7,6 +7,7 @@
     padding: 15px;
     box-sizing: border-box;
     background: #F5F5F5;
+    overflow: scroll;
 }
 
 .cHeader{

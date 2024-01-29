@@ -10,6 +10,7 @@
     margin: 0;
     background: #F5F5F5;
     box-sizing: border-box;
+    overflow: scroll;
 }
 
 .vDetails{
