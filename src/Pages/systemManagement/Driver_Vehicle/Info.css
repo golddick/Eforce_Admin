@@ -49,8 +49,8 @@
     height: 100%;
     background-color: transparent;
     align-items: center;
-    justify-content: space-between;
-    gap: 15px;
+    /* justify-content: space-between; */
+    gap: 20px;
     box-sizing: border-box;
 
 }

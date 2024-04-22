@@ -1,19 +1,23 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './bodyHeader.css'
 import Img from '../../assets/user.svg'
 import { MdOutlineSearch } from "react-icons/md";
+import { AuthContext } from '../../Context/AuthContext';
+
 
 
 function BodyHeader() {
+  const { user } = useContext(AuthContext);
+
   return (
     <div className='Body_Header'>
       <div className="headerLeft">
-       <div className='orgName'>Organization Name</div>
+       <div className='orgName'>{user?.data.organizationName || 'E-Force'}</div>
        <div className="orgDate">
        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
         <path d="M15.295 0C15.5831 3.90419e-05 15.8613 0.108697 16.0766 0.305364C16.292 0.502032 16.4295 0.77303 16.4633 1.06696L16.4715 1.20833V2.41667H18.8246C19.4182 2.41647 19.99 2.64674 20.4253 3.06131C20.8606 3.47588 21.1272 4.0441 21.1717 4.65208L21.1776 4.83333V19.3333C21.1778 19.943 20.9536 20.5303 20.55 20.9773C20.1463 21.4244 19.593 21.6982 19.001 21.744L18.8246 21.75H2.35307C1.75942 21.7502 1.18763 21.5199 0.752338 21.1054C0.317042 20.6908 0.0504068 20.1226 0.00588293 19.5146L1.17969e-07 19.3333V4.83333C-0.000187751 4.22364 0.22402 3.6364 0.627678 3.18934C1.03134 2.74228 1.58461 2.46844 2.17659 2.42271L2.35307 2.41667H4.70614V1.20833C4.70647 0.900354 4.8213 0.604128 5.02716 0.38018C5.23301 0.156232 5.51436 0.021466 5.81372 0.00341703C6.11308 -0.014632 6.40786 0.0853985 6.63781 0.28307C6.86777 0.480742 7.01556 0.761134 7.05097 1.06696L7.05921 1.20833V2.41667H14.1184V1.20833C14.1184 0.887863 14.2424 0.580519 14.463 0.353913C14.6837 0.127306 14.9829 0 15.295 0ZM18.8246 10.875H2.35307V19.3333H18.8246V10.875ZM18.8246 4.83333H2.35307V8.45833H18.8246V4.83333Z" fill="#AAA9A9"/>
       </svg>
-        <span>03 Nov 2023</span>
+      <span>{new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
        </div>
       </div>
       <div className="header_Right">

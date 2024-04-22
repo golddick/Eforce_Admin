@@ -67,12 +67,11 @@ overflow: scroll;
 }
 
 .BirthDetails{
-    display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    /* background-color: crimson; */
+    flex-wrap: wrap;
 }
 
 .dob, .gender, .nationality{
@@ -94,8 +93,8 @@ overflow: scroll;
 }
 
 .dobRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 20px;
     align-items: center;
 }
@@ -205,8 +204,9 @@ margin-top: 20px;
   }
 
   .experience{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 2fr 2fr; */
     align-items: center;
     gap: 20px;
     margin-top: 20px;
@@ -228,15 +228,18 @@ justify-content: flex-start;
     width: 100%;
     gap: 20px;
     align-items: flex-start;
+    /* background-color: aqua; */
 
   }
 
   .dateRow{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    display: flex;
+    grid-template-columns: 2fr 2fr 2fr ;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
     width: 100%;
+    flex: 1;
   }
 
   .fromYear, .toYear{
@@ -246,7 +249,11 @@ justify-content: flex-start;
     gap: 10px;
     align-items: flex-start;
     justify-content: flex-start;
+    /* background-color: #047DD6; */
+    flex: 1;
+    
   }
+  
 
   .upload{
     display: grid;
@@ -275,6 +282,7 @@ justify-content: flex-start;
     border-radius: 30px;
     background: #FFF;
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  
   }
 
   .innerDisplay{
@@ -305,13 +313,14 @@ justify-content: flex-start;
     align-items: center;
     border-radius: 30px;
     background: #047DD6;
-
+    cursor: pointer;
     color: #FFF;
     font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    border: none;
   }
 
   .beforeText{
@@ -331,6 +340,7 @@ justify-content: flex-start;
 
   .submit{
     display: flex;
+    border: none;
     width: 150px;
     padding: 10px;
     justify-content: center;
@@ -341,6 +351,7 @@ justify-content: flex-start;
     color: #FFF;
     margin-top: 50px;
     margin-bottom: 50px;
+    cursor: pointer;
   }
 
 .DLD{

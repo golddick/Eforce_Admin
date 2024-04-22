@@ -41,7 +41,7 @@ function HomeNav() {
             {/* <div  className={activeButton === 'management' ? 'activeBTN' : 'nav'} onClick={() => handleButtonClick('management')}>
             System Management
             </div> */}
-           <NavLink to='/management' className={activeButton === 'management' ? 'activeBTN' : 'nav'} onClick={() => handleButtonClick('management')}>
+           <NavLink to='/' className={activeButton === 'management' ? 'activeBTN' : 'nav'} onClick={() => handleButtonClick('management')}>
             System Management </NavLink>
           <NavLink to='/vehicle' className='nav'>   Vehicle Lot Center</NavLink>
          <NavLink to='/notification' className={activeButton === 'notification' ? 'activeBTN' : 'nav'} onClick={() => handleButtonClick('notification')}> Alerts & Notifications </NavLink>

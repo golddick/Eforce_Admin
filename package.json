@@ -10,7 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.19.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.12",
+    "@mui/material": "^5.15.15",
+    "axios": "^1.6.7",
     "chart.js": "^4.4.1",
+    "cloudinary": "^2.1.0",
+    "cloudinary-react": "^1.8.1",
     "faker": "^6.6.6",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
@@ -29,5 +38,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "vite": "^5.0.0"
-  }
+  },
+  "proxy": "https://project-e-force-backend-v2.onrender.com/api/"
 }

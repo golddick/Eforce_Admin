@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Add from '../Popup/Add/Add'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import './tableNav.css'
 
 function TableNav() {
@@ -17,43 +17,33 @@ function TableNav() {
         navigateTo(`/${linkId}`)
       };
     
-      // const handleClickOutside = (event) => {
-      //   if (!event.target.closest('.tNav')) {
-      //       setShowActive(null);
-      //   }
-      // };
-    
-      // useEffect(() => {
-      //   document.addEventListener('click', handleClickOutside);
-    
-      //   return () => {
-      //     document.removeEventListener('click', handleClickOutside);
-      //   };
-      // }, []); // Adding and removing click event listener on mount and unmount
+
     
   return (
     <div className='TableNav'>
     <div className="table-Nav">
-    <div className={`tNav ${showActive === 'management' ? 'clickActive' : ''}`} onClick={() => toggleActiveLine("management")}>
-            <span className='tNavText'>Officer</span>
-            <div className={`clickActive ${showActive === 'management' ? 'activeLine' : ''}`}></div>
+      
+        
+        <NavLink to='/' className='tNav'>
+        Officer </NavLink>
+        
+        <div>
+        <NavLink to='/Drivers-Management' className='tNav'>
+        Drivers </NavLink>
         </div>
-        <div className={`tNav ${showActive === 'Drivers-Management' ? 'clickActive' : ''}`} onClick={() => toggleActiveLine('Drivers-Management')}>
-            <span className='tNavText'>Drivers</span>
-            <div className={`clickActive ${showActive === 'Drivers-Management' ? 'activeLine' : ''}`}></div>
+        <div>
+        <NavLink to='/Vehicles-Management' className='tNav'>
+        Vehicles </NavLink>
         </div>
-        <div className={`tNav ${showActive === 'Vehicles-Management' ? 'clickActive' : ''}`} onClick={() => toggleActiveLine('Vehicles-Management')}>
-            <span className='tNavText'> Vehicle</span>
-            <div className={`clickActive ${showActive === 'Vehicles-Management' ? 'activeLine' : ''}`}></div>
+        <div>
+        <NavLink to='/Violation-Management' className='tNav'>
+        Violation </NavLink>
         </div>
-        <div className={`tNav ${showActive === 'Violation-Management' ? 'clickActive' : ''}`} onClick={() => toggleActiveLine('Violation-Management')}>
-            <span className='tNavText'>Violation</span>
-            <div className={`clickActive ${showActive === 'Violation-Management' ? 'activeLine' : ''}`}></div>
+        <div>
+        <NavLink to='/Transaction-Management' className='tNav'>
+        Transaction </NavLink>
         </div>
-        <div className={`tNav ${showActive === 'Transaction-Management' ? 'clickActive' : ''}`} onClick={() => toggleActiveLine('Transaction-Management')}>
-            <span className='tNavText'>Transaction</span>
-            <div className={`clickActive ${showActive === 'Transaction-Management' ? 'activeLine' : ''}`}></div>
-        </div>
+       
     </div>
     <div className="add">
  <div className="sort_">

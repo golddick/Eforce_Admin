@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    /* background-color: green; */
+    
 }
 
 .tNav{
@@ -25,7 +27,9 @@
     width: 100px;
     /* height: 100%; */
     gap: 10px;
-    /* background-color: aqua; */
+    /* background-color: brown; */
+    text-decoration: none;
+    color: #000;
 }
 
 .tNavText{
@@ -88,4 +92,92 @@ line-height: normal;
     line-height: normal;
 }
 
+
+@media screen and (max-width: 1200px) {
+ 
+    .TableNav{
+        width: 100%;
+        background: #F5F5F5;
+        height: 105px;
+        flex-shrink: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+
+
+    .table-Nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: scroll;
+        /* flex-wrap: wrap; */
+        gap: 5px;
+        
+    }
+    
+    .tNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        /* height: 100%; */
+        gap: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+    
+
+    
+    
+    .add{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        width: 100%;
+        padding:5px;
+        box-sizing: border-box;
+        position: relative;
+        background-color: var(--color-bg);
+    }
+
+
+.addBtn{
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap:5px;
+    border-radius: 30px;
+    background: #047DD6;
+    /* height: 15px; */
+    /* width: 80px; */
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+    
+    .sort_{
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 5px;
+    font-size: 10px;
+    }
+
+   }
+ 
+   @media screen and (max-width: 600px) {
+
+    
+   }
 
